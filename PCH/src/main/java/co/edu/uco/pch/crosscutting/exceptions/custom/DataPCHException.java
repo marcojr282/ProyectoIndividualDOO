@@ -8,15 +8,15 @@ public final class DataPCHException extends PCHException{
 	
 	private static final long serialVersionUID = 1L;
 
-	public DataPCHException(String mensajeUsuario, Lugar lugar) {
+
+	public DataPCHException(final String mensajeUsuario) {
 		super(mensajeUsuario, Lugar.DATA);
 		
 	}
 	
-	public DataPCHException(final String mensajeTecnico, final String mensajeUsuario, , throwable ) {
-		super(mensajeTecnico, mensajeUsuario, Lugar.DATA, exceptionRaiz);
+	public DataPCHException(final String mensajeTecnico, final String mensajeUsuario,Lugar lugar, final Throwable excepcionRaiz) {
+		super(mensajeTecnico, mensajeUsuario, Lugar.DATA, excepcionRaiz);
 	}
 	
 	
-
 }

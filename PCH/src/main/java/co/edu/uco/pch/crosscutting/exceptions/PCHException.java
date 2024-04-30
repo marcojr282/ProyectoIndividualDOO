@@ -32,6 +32,11 @@ public class PCHException extends RuntimeException {
 
 	private final void setLugar(final Lugar lugar) {
 		this.lugar = ObjectHelper.getObjectHelper().getDefaultValue(lugar, Lugar.DEFAULT);
+
+	}
+	
+	private static final long getSerialversionuid() {
+		return serialVersionUID;
 	}
 
 
