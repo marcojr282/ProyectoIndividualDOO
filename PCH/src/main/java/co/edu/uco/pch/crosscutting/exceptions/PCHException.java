@@ -17,11 +17,15 @@ public class PCHException extends RuntimeException {
 		this.lugar = lugar;
 	}
 	public PCHException( final String mensajeUsuario,final Lugar lugar) {
-		super(mensajeUsuario, new Exception());
+		super(mensajeUsuario);
 		setMensajeUsuario(mensajeUsuario);
 		setLugar(lugar);
 	}
-
+	public PCHException( String mensajeTecnico, String mensajeUsuario,final Lugar lugar) {
+		super(mensajeUsuario);
+		setMensajeUsuario(mensajeUsuario);
+		setLugar(lugar);
+	}
 
 
 	private final void setMensajeUsuario(final String mensajeUsuario) {
